@@ -1,0 +1,78 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+header {
+  @apply bg-white/50 dark:bg-black/50;
+  display: grid;
+  grid-template-columns: 25% 1fr 25%;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 87.5px;
+  background-filter: blur(10px); /* Aplicar el efecto borroso */
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.header-logo{
+  grid-column-start: 1;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+}
+
+.header-buttons{
+  grid-column-start: 3;
+  gap:15px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  @apply transition-transform duration-300 hover:scale-110;
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+  padding: 5px;
+  align-items: center;
+}
+
+header li p {
+  display: flex;
+  font-family: "Roboto";
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.8s ease;
+  height: 21px;
+}
+
+header li p:hover,
+a:active {
+  transition: 0.8s ease;
+}
+
+@media (max-width: 1024px) {
+  header {
+    grid-template-columns: 25% 1fr 25%;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    grid-template-columns: 25% 1fr 25%;
+  }
+}
+
+@media (max-width: 640px) {
+  header {
+    grid-template-columns: 50% 1fr 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    grid-template-columns: 50% 1fr 50%;
+  }
+}
