@@ -1,18 +1,35 @@
 import { LearnProvider } from '../../context/LearnProvider'
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, useRoutes } from 'react-router-dom'
 
-import Header from '../../components/Header'
+import Layout from '../../components/Layout'
+import LandingPage from '../Landing'
+import LearnHtml from '../LearnHtml'
+import LearnCss from '../LearnCss'
+import LearnJavascript from '../LearnJavascript'
+import LearnReact from '../LearnReact'
 
 import './App.css'
 
+const AppRoutes = () => {
+  let  routes = [
+    {path: '/', element: <LandingPage />},
+    {path: '/html', element: <LearnHtml />},
+    {path: '/css', element: <LearnCss />},
+    {path: '/javascript', element: <LearnJavascript />},
+    {path: '/react', element: <LearnReact />},
+  ];  
+
+  return useRoutes(routes)
+}
+
 function App() {
-
-
   return (
     <>
       <LearnProvider>
         <BrowserRouter>
-          <Header />
+          <Layout>
+            <AppRoutes/>
+          </Layout>  
         </BrowserRouter>  
       </LearnProvider>
     </>

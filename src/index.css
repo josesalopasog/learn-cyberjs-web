@@ -3,30 +3,36 @@
 
 @font-face {
   font-family: "Cal Sans SemiBold";
-  src: url("../../assets/fonts/CalSans-SemiBold.woff") format("opentype");
+  src: url("./assets/fonts/CalSans-SemiBold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("../../assets/fonts/Roboto.woff") format("truetype");
+  src: url("./assets/fonts/Roboto.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
+html{
+  @apply bg-white text-black dark:bg-black dark:text-white;  
+}
+
 body,
 html {
-  @apply bg-white text-black dark:bg-black dark:text-white;
   padding: 0;
   margin: 0;  
   font-size: 24px;
   font-family: Roboto;
 }
 
-#root {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+:root {
+  --gradient-color: linear-gradient(
+    to left,
+    rgb(0, 225, 255),
+    rgb(210, 0, 255)
+  );
 }
 
 #background {
