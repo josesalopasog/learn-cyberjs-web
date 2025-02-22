@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+.syntax-highlighter-container{
+    @apply border border-black/30 bg-gray-900 dark:border-white/30 dark:bg-black;
+    border-radius: 20px;
+    display: flex;
+    align-items:center;
+    padding: 10px 20px;
+    margin: 20px 0; 
+}

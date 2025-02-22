@@ -1,0 +1,4 @@
+.html-fundamentals-article{
+    display:flex;
+    flex-direction: column;
+}

@@ -1,3 +1,21 @@
-.html-section{
-    width: 70%;
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+article{
+    margin: 10px 0px;
 }
+article strong{
+    @apply text-[#E100FF] dark:text-[#00E1FF];
+}
+
+.gradient-text-html{
+    font-size: 48px;
+    color: transparent;
+    background: linear-gradient(120deg, #E34F26, #F4BAAA, #E34F26);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    display: flex;
+    animation: gradient-text 4s linear infinite;
+}
+

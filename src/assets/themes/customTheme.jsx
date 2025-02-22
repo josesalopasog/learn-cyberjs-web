@@ -7,7 +7,7 @@ const customTheme = {
     },
     'code[class*="language-"]': {
       background: "transparent",
-      fontSize: "15px",
+      fontSize: "16px",
       color: "#FFFFFF",
     },
     "atrule": {

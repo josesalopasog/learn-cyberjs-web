@@ -1,33 +1,91 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
-header {
-  grid-area: header;
-}
 
 main {
-  grid-area: main;
-  height: 100vh;
-  display: flex;
+  display:flex;
   flex-direction: column;
+  position:absolute;
+  justify-content: center;
+  top: 87.5px;
+  width: 100%;
 }
 
 .main-content {
   display: flex;
-  flex-grow: 1;
+  justify-content: center;
 }
 
-@media (max-width: 1320px) {
+section{
+  width: 90%;
+  max-width: 900px;
+  padding: 10px 25px;
 }
 
-@media (max-width: 1024px) {
+section ol{
+  padding: 10px 25px;
 }
 
-@media (max-width: 768px) {
+table {
+  @apply border border-black/30 bg-white dark:border-white/30 dark:bg-black;
+  width: 100%;
+  border-collapse: separate;
+  border-radius: 15px;
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: left;
+  overflow: hidden;
+}
+th, td {
+  @apply border bg-white border-black/30  dark:border-white/30 dark:bg-black ;
+  padding: 10px;
+}
+th {
+  @apply text-[#E100FF] dark:text-[#00E1FF] dark:bg-black/30;
 }
 
-@media (max-width: 640px) {
+th:first-child {
+  border-top-left-radius: 15px;
+}
+th:last-child {
+  border-top-right-radius: 15px;
+}
+tr:last-child td:first-child {
+  border-bottom-left-radius: 15px;
+}
+tr:last-child td:last-child {
+  border-bottom-right-radius: 15px;
 }
 
-@media (max-width: 480px) {
+.gradient-text{
+  font-size: 38px;
+  color: transparent;
+  background: linear-gradient(120deg, #e100ff, #00e1ff, #e100ff);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: flex;
+  animation: gradient-text 6s linear infinite;
+  margin: 10px 0;
+}
+
+.gradient-text-lg{
+  font-size: 48px;
+  color: transparent;
+  background: linear-gradient(120deg, #e100ff, #00e1ff, #e100ff);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: flex;
+  animation: gradient-text 6s linear infinite;
+  margin: 10px 0;
+}
+
+@keyframes gradient-text {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: -100%;
+  }
 }

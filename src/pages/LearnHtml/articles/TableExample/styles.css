@@ -1,0 +1,116 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+.table-example {
+  @apply border border-black/30 bg-gray-900 dark:border-white/30 dark:bg-black;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 20px 0;
+}
+
+.table-content-example {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+  color: #0096ff;
+  background: #0096ff22;
+  border: 2px solid #0096ff;
+  border-radius: 15px;
+  padding: 15px;
+  height: 100%;
+  gap: 5px;
+}
+
+.table-title-example{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    color:#0096FF;
+}
+
+.table-thead-example, .table-tbody-example, .table-tfoot-example{
+    color: #c800ff;
+    text-align: left;
+}
+
+.caption-example {
+  font-size: 22px;
+  font-weight: bold;
+  color: #c800ff;
+  background: #c800ff22;
+  border: 2px solid #c800ff;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 10px 0;
+}
+
+.thead-example {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #c800ff;
+  background: #c800ff22;
+  border: 2px solid #c800ff;
+  border-radius: 15px;
+  padding: 10px;
+  height: 100%;
+  gap: 5px;
+}
+
+.tbody-example {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #c800ff;
+  background: #c800ff22;
+  border: 2px solid #c800ff;
+  border-radius: 15px;
+  padding: 10px;
+  height: 100%;
+  gap: 5px;
+}
+
+.tfoot-example {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #c800ff;
+  background: #c800ff22;
+  border: 2px solid #c800ff;
+  border-radius: 15px;
+  padding: 10px;
+  height: 100%;
+  gap: 5px;
+}
+
+.th-example,
+.td-example {
+  background: #00e1ff22;
+  color: #00e1ff;
+  border: 2px solid #00e1ff;
+  padding: 10px;
+}
+.th-example {
+  background: #00e1ff22;
+  color: #00e1ff;
+  border: 2px solid #00e1ff;
+}
+
+.th-example:first-child {
+  border-top-left-radius: 15px;
+}
+.th-example:last-child {
+  border-top-right-radius: 15px;
+}
+.tr-example:last-child .td-example:first-child {
+  border-bottom-left-radius: 15px;
+}
+.tr-example:last-child .td-example:last-child {
+  border-bottom-right-radius: 15px;
+}

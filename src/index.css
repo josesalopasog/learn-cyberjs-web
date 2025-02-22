@@ -27,6 +27,36 @@ html {
   font-family: Roboto;
 }
 
+ol {
+  list-style-type:decimal;
+}
+
+h1{
+  font-family: Cal Sans Semibold;
+  font-size: 40px;
+}
+
+h2{
+  font-family: Cal Sans Semibold;
+  font-size: 30px;
+}
+h3{
+  font-family: Cal Sans Semibold;
+  font-size: 26px;
+}
+
+p{
+  font-family: Roboto;
+  padding: 5px 10px;
+}
+
+#root{
+  display:flex;
+  flex-direction: column;
+  position:relative;
+  width:100%;
+}
+
 :root {
   --gradient-color: linear-gradient(
     to left,

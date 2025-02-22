@@ -1,0 +1,71 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+.html-structure-explication-container{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.html-structure-explication{
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+    gap: 5px;
+    font-size: 18px;
+}
+
+.head-example {
+    @apply border border-black/30 bg-gray-900 dark:border-white/30 dark:bg-black;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 2px;
+    color:#C800FF;
+    font-size: 16px;
+    height: 15%;
+    border-radius: 15px;
+    padding: 10px 15px;
+}
+
+.head-example-content {
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+    height: 15%;
+    background: #C800FF22;
+    border: 2px solid #C800FF; 
+    border-radius: 15px 15px 0px 0px; 
+    padding: 5px;
+}
+
+.img-head-example {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background: #00E1FF22;
+    color:#00E1FF;
+    border: 2px solid #00E1FF; 
+    border-radius: 15px; 
+    font-size: 12px;
+    width: 54px;
+    height: 54px;    
+}
+
+.title-head-example {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background: #00E1FF22;
+    color:#00E1FF;
+    border: 2px solid #00E1FF; 
+    border-radius: 15px; 
+    font-size: 14px;
+    width: 210px;
+    height: 54px;    
+}
