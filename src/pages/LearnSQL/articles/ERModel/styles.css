@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+.er-model-table tr:last-child td:first-child {
+  border-bottom-left-radius: 0px;
+}
+.er-model-table tr:nth-last-child(3) td:first-child{
+  border-bottom-left-radius: 15px;
+}

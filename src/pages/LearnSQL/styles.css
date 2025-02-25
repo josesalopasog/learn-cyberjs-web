@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+.gradient-text-sql{
+    font-size: 48px;
+    color: transparent;
+    background: linear-gradient(120deg, #00bcf2, #c2f2ff, #00bcf2);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    display: flex;
+    animation: gradient-text 4s linear infinite;
+}
+
+.ul-sql{
+    margin-left: 20px;
+}
+
+.ul-sql li{
+    @apply before:text-[#E100FF] dark:before:text-[#00E1FF];
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.ul-sql li::before {
+    content: "◆"; 
+    font-size: 16px;
+    margin-right: 10px; 
+}
+
+.ul-sql-sm{
+    margin-left: 5px;
+    
+}
+
+.ul-sql-sm li{
+    @apply before:text-[#E100FF] dark:before:text-[#00E1FF];
+    font-size: 16px;
+    margin:10px 0px;
+}
+.ul-sql-sm li::before {
+    content: "◆"; 
+    font-size: 14px;
+    margin-right: 10px; 
+}
+
+.ol-sql{
+    margin-left: 20px;
+}
+
+.ol-sql li{
+    @apply [&::marker]:text-[#E100FF] dark:[&::marker]:text-[#00E1FF];
+}

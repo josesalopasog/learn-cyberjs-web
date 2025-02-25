@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+.html-fundamentals-article{
+    display:flex;
+    flex-direction: column;
+}

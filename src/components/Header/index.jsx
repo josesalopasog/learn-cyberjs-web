@@ -35,7 +35,7 @@ const Header = () => {
 
                 <div className="header-buttons">
                     <div id="main-nav" className="flex justify-center items-center">
-                        <ul className="flex gap-x-4 text-black dark:text-white">
+                        <ul className="ul-header flex gap-x-4 text-black dark:text-white">
                             {/* <li >
                                 <DocIcon className="w-4 h-4" />
                                 <a href=""  >
@@ -43,7 +43,7 @@ const Header = () => {
                                 </a>
                             </li> */} 
                             <a href="https://github.com/josesalopasog/ui-cyberjs-web.git" target="_blank">
-                                <li >
+                                <li className="li-header">
                                     <GithubIcon className="w-4 h-4" />
                                     <p>Github</p>
                                     

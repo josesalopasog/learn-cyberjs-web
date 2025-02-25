@@ -43,11 +43,12 @@ h2{
 h3{
   font-family: Cal Sans Semibold;
   font-size: 26px;
+  margin: 10px 0;
 }
 
 p{
   font-family: Roboto;
-  padding: 5px 10px;
+
 }
 
 #root{

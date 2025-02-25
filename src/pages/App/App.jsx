@@ -7,6 +7,7 @@ import LearnHtml from '../LearnHtml'
 import LearnCss from '../LearnCss'
 import LearnJavascript from '../LearnJavascript'
 import LearnReact from '../LearnReact'
+import LearnSQL from '../LearnSQL'
 
 import './App.css'
 
@@ -17,6 +18,7 @@ const AppRoutes = () => {
     {path: '/css', element: <LearnCss />},
     {path: '/javascript', element: <LearnJavascript />},
     {path: '/react', element: <LearnReact />},
+    {path: '/sql', element: <LearnSQL />},
   ];  
 
   return useRoutes(routes)

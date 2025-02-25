@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ChevronDownIcon, CloseSideMenuIcon, CssIcon, Html5Icon, JavascriptIcon, OpenSideMenuIcon } from '../../assets/icons';
+import { ChevronDownIcon, CloseSideMenuIcon, CssIcon, Html5Icon, JavascriptIcon, OpenSideMenuIcon, SQLIcon } from '../../assets/icons';
 import { useState } from 'react';
 
 import './styles.css';
@@ -17,6 +17,8 @@ const SideNav = () => {
         html: true,
         css: false,
         javascript: false,
+        react: false,
+        sql: false,
     });
     //Function to Open or Close the section
     const toggleDisplaySection = (sectionName) => {
@@ -122,6 +124,30 @@ const SideNav = () => {
                                 <li>Módulos en JavaScript </li>
                                 <li>Frameworks y Librerías</li>
                                 <li>Buenas Prácticas y Patrones de Diseño</li>
+                            </ol>
+                            <div className="nav-section">
+                                <button onClick={() => toggleDisplaySection("sql")}>
+                                    {sectionOpen.sql === false ? (
+                                        <ChevronDownIcon className="toggle-section-icon section-close-icon" />
+                                    ) : (
+                                        <ChevronDownIcon className="toggle-section-icon section-open-icon" />
+                                    )}
+                                </button>
+                                <Link to='/sql'>
+                                    <div className='nav-link'>
+                                        <div className="section-icon">
+                                            <SQLIcon />
+                                        </div>
+                                        <h2>SQL</h2>
+                                    </div>
+                                </Link>
+                            </div>
+                            <ol className={`${sectionOpen.sql ? "flex" : "hidden"} `} >
+                                <li>Fundamentos de SQL</li>
+                                <li>Objetos en Bases de Datos</li>
+                                <li>Comandos importantes</li>
+                                <li>Comandos importantes</li>  
+                                <li>Operaciones basicas</li>         
                             </ol>
                         </nav>
                     </div>

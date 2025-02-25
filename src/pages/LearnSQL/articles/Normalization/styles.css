@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+.first-nf-table tr:first-child td{
+    @apply border-green-400;
+}
+
+.first-nf-table tr:nth-child(2) td{
+    @apply border-green-400;
+}
+
+.two-nf-purchase-details tr th:nth-child(1), .two-nf-purchase-details td:nth-child(1) {
+    @apply border-green-400;
+}
+
+.third-nf-purchases tr th:nth-child(2), .third-nf-purchases td:nth-child(2) {
+    @apply border-green-400;
+}
+
+.third-nf-clients tr th:nth-child(1), 
+.third-nf-clients td:nth-child(1),
+.third-nf-directions tr th:nth-child(1), 
+.third-nf-directions td:nth-child(1),
+.bc-nf-purchase-details tr th:nth-child(2), 
+.bc-nf-purchase-details td:nth-child(2),
+.bc-nf-products tr th:nth-child(1), 
+.bc-nf-products td:nth-child(1)
+{
+    @apply border-green-400;
+}
+

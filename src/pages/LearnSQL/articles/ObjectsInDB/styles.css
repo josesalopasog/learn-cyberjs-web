@@ -1,0 +1,13 @@
+.ul-sql-objects{
+    margin-left: 20px;
+}
+
+.ul-sql-objects li{
+    @apply before:text-[#E100FF] dark:before:text-[#00E1FF];
+    font-size: 16px;
+}
+.ul-sql-objects li::before {
+    content: "◆"; 
+    font-size: 14px;
+    margin-right: 10px; 
+}

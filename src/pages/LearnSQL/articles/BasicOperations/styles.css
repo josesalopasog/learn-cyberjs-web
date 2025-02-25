@@ -1,0 +1,4 @@
+.operators-table td:first-child, 
+.operators-table th:first-child {
+  text-align: center;
+}
