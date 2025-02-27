@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { ChevronDownIcon, CloseSideMenuIcon, CssIcon, Html5Icon, JavascriptIcon, OpenSideMenuIcon, SQLIcon } from '../../assets/icons';
 import { useState } from 'react';
+import MyLink from '../MyLink';
+
 
 import './styles.css';
 
@@ -143,11 +145,15 @@ const SideNav = () => {
                                 </Link>
                             </div>
                             <ol className={`${sectionOpen.sql ? "flex" : "hidden"} `} >
-                                <li>Fundamentos de SQL</li>
-                                <li>Objetos en Bases de Datos</li>
-                                <li>Comandos importantes</li>
-                                <li>Comandos importantes</li>  
-                                <li>Operaciones basicas</li>         
+                                <li ><MyLink to='/sql' sectionId='sql-fundamentals' >Fundamentos de SQL</MyLink> </li>
+                                <li ><MyLink to='/sql' sectionId='db-fundamentals' >Fundamentos de una Base de Datos</MyLink> </li>
+                                <li ><MyLink to='/sql' sectionId='dbms'>Sistema de Gestión de Bases de Datos(SGBD)</MyLink> </li>
+                                <li ><MyLink to='/sql' sectionId='objects-in-db'>Objetos en Bases de Datos</MyLink></li>
+                                <li ><MyLink to='/sql' sectionId='important-commands'>Comandos Importantes de SQL</MyLink></li>
+                                <li ><MyLink to='/sql' sectionId='data-types'>Tipos de Datos en SQL</MyLink></li> 
+                                <li ><MyLink to='/sql' sectionId='basic-operations'>Operaciones básicas en SQL</MyLink></li>       
+                                <li ><MyLink to='/sql' sectionId='er-model'>Modelo Entidad-Relación (ER)</MyLink></li>
+                                <li ><MyLink to='/sql' sectionId='normalization'>Normalización en SQL</MyLink></li>    
                             </ol>
                         </nav>
                     </div>

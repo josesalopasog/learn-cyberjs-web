@@ -3,7 +3,7 @@ import './styles.css';
 const SQLFundamentals = () => {
     return (
         <>
-            <article className='sql-fundamentals-article'>
+            <article className='sql-fundamentals-article' id='sql-fundamentals'>
                 <h2 className='gradient-text'>Fundamentos de SQL</h2>
                 <p>
                     SQL <strong>(Structured Query Language / Lenguaje de Consulta Estructurado)</strong> es un lenguaje de programación utilizado diseñado para 

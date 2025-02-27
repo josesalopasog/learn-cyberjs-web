@@ -3,7 +3,7 @@ import './styles.css';
 const BasicOperations = () => {
     return (
         <>
-            <article className='basic-operations-article'>
+            <article className='basic-operations-article' id='basic-operations' >
                 <h2 className='gradient-text'>Operaciones básicas en SQL</h2>
                 <p>
                     Las operaciones básicas en SQL son las instrucciones que permiten interactuar con la base de datos.

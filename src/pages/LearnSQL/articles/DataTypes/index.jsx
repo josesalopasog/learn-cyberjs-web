@@ -3,7 +3,7 @@ import './styles.css';
 const DataTypes = () => {
     return (
         <>
-            <article className='data-types-article'>
+            <article className='data-types-article' id='data-types'>
                 <h2 className='gradient-text'>Tipos de Datos en SQL</h2>
                 <p>
                 Los tipos de datos en SQL definen el tipo de valores que pueden almacenarse en una columna de una tabla. 

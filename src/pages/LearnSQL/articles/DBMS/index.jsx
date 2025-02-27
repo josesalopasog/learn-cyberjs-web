@@ -3,7 +3,7 @@ import './styles.css';
 const DBMS = () => {
     return (
         <>
-            <article className='dbms-article'>
+            <article className='dbms-article' id='dbms'>
                 <h2 className='gradient-text'>Sistema de Gestión de Bases de Datos (SGBD)</h2>
                 <p>
                     Un <strong>Sistema de Gestión de Bases de Datos (SGBD)</strong> es un <strong>software</strong> que se encarga de gestionar y administrar bases de datos,

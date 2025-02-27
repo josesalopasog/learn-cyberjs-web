@@ -3,7 +3,7 @@ import './styles.css';
 const DBFundamentals = () => {
     return (
         <>
-            <article className='sql-fundamentals-article'>
+            <article className='db-fundamentals-article' id='db-fundamentals'>
                 <h2 className='gradient-text'>Fundamentos de una Base de Datos</h2>
                 <p>
                     Una <strong>BD (base de datos)</strong> es un conjunto de datos organizados y relacionados entre sí, que se almacenan de forma estructurada para que puedan ser consultados y utilizados de manera eficiente.

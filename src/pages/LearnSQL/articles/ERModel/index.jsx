@@ -3,7 +3,7 @@ import './styles.css';
 const ERModel = () => {
     return (
         <>
-            <article className='er-model-article'>
+            <article className='er-model-article' id='er-model'>
                 <h2 className='gradient-text'>Modelo Entidad-Relación (ER)</h2>
                 <p>
                     El <strong>Modelo Entidad-Relación (ER)</strong> es una representación gráfica que se utiliza para modelar

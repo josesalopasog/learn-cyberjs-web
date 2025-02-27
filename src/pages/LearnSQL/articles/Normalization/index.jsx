@@ -3,7 +3,7 @@ import './styles.css';
 const Normalization = () => {
     return (
         <>
-            <article className='normalization-article'>
+            <article className='normalization-article' id='normalization'>
                 <h2 className='gradient-text'>Normalización en SQL</h2>
                 <p>
                     La normalización es un proceso en SQL para <strong>estructurar</strong> una base de datos

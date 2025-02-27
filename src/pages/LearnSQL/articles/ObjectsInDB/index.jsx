@@ -3,7 +3,7 @@ import './styles.css';
 const ObjectsInDB = () => {
     return (
         <>
-            <article className='objects-in-db-article'>
+            <article className='objects-in-db-article' id='objects-in-db'>
                 <h2 className='gradient-text'>Objetos en Bases de Datos</h2>
                 <p>
                     En una base de datos relacional, los objetos son estructuras que se utilizan para almacenar y organizar la información. Los objetos más comunes en una base de datos son:

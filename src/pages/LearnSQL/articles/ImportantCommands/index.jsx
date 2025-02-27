@@ -3,7 +3,7 @@
 const ImportantCommands = () => {
     return (
         <>
-            <article className='important-commands-article'>
+            <article className='important-commands-article' id='important-commands'>
                 <h2 className='gradient-text'>Comandos Importantes de SQL</h2>
                 <p>
                     Los comandos de SQL permiten interactuar con las bases de datos  para realizar las 4 operaciones basicas <strong> CRUD - Create(Crear), Read(Leer), Update(Actualizar) y Delete(Eliminar)</strong>.
