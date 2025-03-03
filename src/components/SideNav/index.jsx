@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ChevronDownIcon, CloseSideMenuIcon, CssIcon, Html5Icon, JavascriptIcon, OpenSideMenuIcon, SQLIcon } from '../../assets/icons';
+import { ChevronDownIcon, CloseSideMenuIcon, CssIcon, Html5Icon, JavascriptIcon, NodeJSIcon, OpenSideMenuIcon, SQLIcon } from '../../assets/icons';
 import { useState } from 'react';
 import MyLink from '../MyLink';
 
@@ -21,6 +21,7 @@ const SideNav = () => {
         javascript: false,
         react: false,
         sql: false,
+        nodejs: false
     });
     //Function to Open or Close the section
     const toggleDisplaySection = (sectionName) => {
@@ -154,6 +155,27 @@ const SideNav = () => {
                                 <li ><MyLink to='/sql' sectionId='basic-operations'>Operaciones básicas en SQL</MyLink></li>       
                                 <li ><MyLink to='/sql' sectionId='er-model'>Modelo Entidad-Relación (ER)</MyLink></li>
                                 <li ><MyLink to='/sql' sectionId='normalization'>Normalización en SQL</MyLink></li>    
+                            </ol>
+                            <div className="nav-section">
+                                <button onClick={() => toggleDisplaySection("nodejs")}>
+                                    {sectionOpen.nodejs === false ? (
+                                        <ChevronDownIcon className="toggle-section-icon section-close-icon" />
+                                    ) : (
+                                        <ChevronDownIcon className="toggle-section-icon section-open-icon" />
+                                    )}
+                                </button>
+                                <Link to='/nodejs'>
+                                    <div className='nav-link'>
+                                        <div className="section-icon">
+                                            <NodeJSIcon />
+                                        </div>
+                                        <h2>Node JS</h2>
+                                    </div>
+                                </Link>
+                            </div>
+                            <ol className={`${sectionOpen.nodejs ? "flex" : "hidden"} `} >
+                                <li ><MyLink to='/nodejs' sectionId='nodejs-fundamentals' >Fundamentos de Node Js</MyLink> </li>
+                                <li ><MyLink to='/nodejs' sectionId='nodejs-asynchronism' >Asincronismo en Node Js</MyLink> </li>  
                             </ol>
                         </nav>
                     </div>

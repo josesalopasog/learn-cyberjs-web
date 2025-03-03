@@ -81,6 +81,38 @@ tr:last-child td:last-child {
   margin: 10px 0;
 }
 
+.ul-learn{
+  margin-left: 20px;
+}
+
+.ul-learn li{
+  @apply before:text-[#E100FF] dark:before:text-[#00E1FF];
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.ul-learn li::before {
+  content: "◆"; 
+  font-size: 16px;
+  margin-right: 10px; 
+}
+
+.ul-learn-sm{
+  margin-left: 5px;
+  
+}
+
+.ul-learn-sm li{
+  @apply before:text-[#E100FF] dark:before:text-[#00E1FF];
+  font-size: 16px;
+  margin:10px 0px;
+}
+.ul-learn-sm li::before {
+  content: "◆"; 
+  font-size: 14px;
+  margin-right: 10px; 
+}
+
 @keyframes gradient-text {
   0% {
     background-position: 100%;

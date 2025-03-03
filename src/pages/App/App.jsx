@@ -8,8 +8,10 @@ import LearnCss from '../LearnCss'
 import LearnJavascript from '../LearnJavascript'
 import LearnReact from '../LearnReact'
 import LearnSQL from '../LearnSQL'
+import LearnNodeJS from '../LearnNodeJS'
 
 import './App.css'
+
 
 const AppRoutes = () => {
   let  routes = [
@@ -19,6 +21,7 @@ const AppRoutes = () => {
     {path: '/javascript', element: <LearnJavascript />},
     {path: '/react', element: <LearnReact />},
     {path: '/sql', element: <LearnSQL />},
+    {path: '/nodejs', element: <LearnNodeJS />},
   ];  
 
   return useRoutes(routes)
