@@ -1,10 +1,10 @@
-.gradient-text-nodejs{
-    font-size: 48px;
-    color: transparent;
-    background: linear-gradient(120deg, #58A746, #C1E1B9, #58A746);
-    background-size: 200% 100%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    display: flex;
-    animation: gradient-text 4s linear infinite;
+.gradient-text-nodejs {
+  font-size: 48px;
+  color: transparent;
+  background: linear-gradient(120deg, #58a746, #c1e1b9, #58a746);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: flex;
+  animation: gradient-text 4s linear infinite;
 }

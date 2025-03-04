@@ -22,10 +22,6 @@ section{
   padding: 10px 25px;
 }
 
-section ol{
-  padding: 10px 25px;
-}
-
 table {
   @apply border border-black/30 bg-white dark:border-white/30 dark:bg-black;
   width: 100%;
@@ -85,7 +81,11 @@ tr:last-child td:last-child {
   margin-left: 20px;
 }
 
-.ul-learn li{
+.ol-learn{
+  margin-left: 35px;
+}
+
+.ul-learn li, .ol-learn li{
   @apply before:text-[#E100FF] dark:before:text-[#00E1FF];
   font-size: 20px;
   margin-top: 5px;
